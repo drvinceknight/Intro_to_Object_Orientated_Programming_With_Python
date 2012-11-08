@@ -10,7 +10,7 @@ Supermarket
 
 ##Required product:
 
-Program to evaluate price of a shopping basket at checkout and keep count of loyalty points acquired by a given customer if he/she signs up to the loyalty program.
+Program to evaluate total income from sales and keep count of loyalty points acquired by a given customer if he/she signs up to the loyalty program.
 
 ##Parameters:
 

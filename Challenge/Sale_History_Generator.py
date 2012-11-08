@@ -5,6 +5,8 @@ import csv
 import os
 from math import exp
 
+#random.seed(1)
+
 files_in_directory=os.listdir(".")
 
 def poisson_sample(lmbda):

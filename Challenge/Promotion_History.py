@@ -4,6 +4,9 @@ import random
 import os
 import sys
 
+#random.seed(1)
+
+
 files_in_directory=os.listdir(".")
 
 if len(sys.argv)==1:

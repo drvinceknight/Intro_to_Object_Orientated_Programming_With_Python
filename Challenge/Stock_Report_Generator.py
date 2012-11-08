@@ -2,6 +2,8 @@
 import csv
 import random
 
+#random.seed(1)
+
 Departments=["Fresh Food","Bakery","Food Cupboard","Frozen Food","Drinks","Baby","Health and Beauty","Pets","Household","Home and Entertainments"]
 
 Products={"Fresh Food":["Apples","Bananas","Fresh Milk","Eggs","Fresh Beef","Fresh Lamb","Fresh Fish","Desserts","Fresh Pasta","Fresh Pizza","Fresh Flowers"],"Bakery":["Bread","Bagel","Pitta","Naan","Croissant","Crumpet","Sweet Treats","Cake"],"Food Cupboard":["Dried Fruit and Nuts","Soup","Tinned Fruit","Gravy","Oil","Cous cous","Rice","Vinegar","Antipasti","Olives","Pickles","Flour","Icing Sugar","Cereal Bars","Popcorn","Jam"],"Frozen Food":["Frozen Meat","Frozen Burgers","Frozen Poultry","Frozen Fruit","Frozen Desserts","Ice Cubes","Frozen Pizza","Frozen Party Food"],"Drinks":["Lemonade","Cola","Sports and Energy","Still Water","Sparkling Water","Fresh Fruit Juice","Tea","Coffee"],"Baby":["Nappies","Baby Toiletries","Baby Rice","Baby Jars"],"Health and Beauty":["Shampoo","Conditioner","Dental Floss","Toothpaste","Toothbrush","Soap","Contact Lens Solution","Cosmetics"],"Pets":["Cat Food","Kitten Food","Dog Food","Puppy Food","Christmas Cat Gift","Christmas Dog Gift"],"Household":["Washing Powder","Bathroom Cleaner","Kitchen Roll","Tissues","Bulbs"],"Home and Entertainments":["Christmas Cards","CD","DVD","Blu Ray","TV","Computer","Utensils","Glasses"]}
