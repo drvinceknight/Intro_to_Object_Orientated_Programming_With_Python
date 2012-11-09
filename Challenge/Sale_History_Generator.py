@@ -12,6 +12,7 @@ Each customer has various attributes including how likely they are to buy produc
 One can input the name of the file to be produced (Default: "Sale_History.csv").
 """
 
+#Uncomment if you want to stick to a random seed (ie recreate same Sales History again and again).
 #random.seed(1)
 
 def poisson_sample(lmbda):
