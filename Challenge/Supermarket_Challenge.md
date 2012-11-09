@@ -45,7 +45,7 @@ The input to the problem is 3 csv files:
 
 The following picture summarises your challenge:
 
-![The underlying structure](Supermarket_Challenge.png)
+![The underlying structure](https://github.com/drvinceknight/Intro_to_Object_Orientated_Programming_With_Python/blob/master/Challenge/Supermarket_Challenge.png?raw=true)
 
 ##Evaluation:
 
