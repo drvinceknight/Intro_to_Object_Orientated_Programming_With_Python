@@ -20,6 +20,6 @@ print "---------------------------------"
 print "---------------------------------"
 print ""
 print "Generating Promotions History using 'Promotion_History.py' (modify file to change parameters as required)"
-os.system("./Promotion_History.py")
+os.system("./Promotion_History_Generator.py")
 print ""
 print "---------------------------------"

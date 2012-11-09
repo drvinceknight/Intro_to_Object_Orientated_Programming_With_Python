@@ -4,6 +4,15 @@ import csv
 
 """
 This file contains code for the solution of the Supermarket challenge.
+
+It by default reads data from three files:
+
+- "Stock_Report.csv"
+- "Sale_History.csv"
+- "Promotions_History.csv"
+
+It prints to screen the total takings and creates a file "Loyalty_Report.csv" which includes details as to the loyalty points collected by each loyal customer.
+
 """
 
 class Product():
@@ -98,6 +107,9 @@ def Create_Departments(Promotions_History,Stock_Report):
     return Departments
 
 def Create_String_to_Product_Dictionary(Departments):
+    """
+    This creates a dictionary that takes as key a string and returns the product object.
+    """
     d={}
     for e in Departments:
         for i in e.products:
