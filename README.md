@@ -12,6 +12,7 @@ The course is a one day workshop and is to be thought of in two parts:
     - Conditional Statements
     - Flow Control
     - Data Structures
+    - Functions
 
 - Notions of Object Orientated Programming:
 
