@@ -50,18 +50,37 @@
 
                     1. Be able to program using [python](http://www.python.org).
 
-                        - Variables
-                        - Flow control
-                        - Functions
-
-                    2. Be able to understand the basic ideas behind Object Orientated Programming.
-
-                        - Classes
-                        - Attributes
-                        - Methods
-                        - Inheritance
+                    2. Understand the basic ideas behind Object Orientated Programming.
 
                     3. Use your skills in a mini "hackathon" to solve a problem.
+                </section>
+
+                <section data-markdown>
+                ## 1. Basic python:
+
+                ---
+
+                - Variables
+                - Flow Control
+                - Functions
+                - Data Structures
+                </section>
+
+                <section data-markdown>
+                ## 2. Basic OOP:
+
+                ---
+
+                - Classes
+                - Attributes
+                - Methods
+                - Inheritance
+                </section>
+
+                <section data-markdown>
+                ## 3. Supermarket Challenge
+
+                ---
                 </section>
 
                 <section data-markdown>
@@ -242,6 +261,11 @@
 
                 </section>
                 <section data-markdown>
+                ##1.1 Variables
+
+                ---
+                </section>
+                <section data-markdown>
                 ##Variables
 
                 ---
@@ -257,24 +281,300 @@
                         Num_2=3.5
                         print Num_1+Num_2
 
-                - List=[1,2,3]
-
-                        List=[1,2,3]
-                        print len(List)
 
                 </section>
 
                 <section data-markdown>
-                    ##Some example python
+                ##String manipulation
 
-                        for j in range(6):
-                            print j
+                ---
+
+                    #We define a variable called String:
+                    String="My name is Vince"
+                    #Let's print the 5th letter of String (Note that python starts counting at 0):
+                    print String[4]
                 </section>
 
                 <section data-markdown>
-                    ##A picture
+                ##String manipulation
 
-                    ![the python logo](http://www.python.org/images/python-logo.gif)
+                ---
+                    #We print the elements in position 1 to 4 (not included) in String:
+                    print String[1:4]
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+                    #We can use the ".index" method to find the position of the first occurrence of an element in String:
+                    a=String.index("V")
+                    print a
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+                    #If we leave 1 position empty python returns "everything":
+                    print String[a:]
+                    print String[:a]
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+
+                    #We define a variable called Num:
+                    Num=3
+                    #We can add 1 to Num in 2 ways:
+                    Num=Num+1
+                    Num+=1
+                    print Num
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+                    #We can carry out other numeric operations in a similar way:
+                    Num-=2
+                    Num*=3
+                    Num**=2
+                    print Num
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+                    #Note that we might not get what we expect with division:
+                    Num2=2
+                    print Num/Num2
+                    #Try (there are other ways):
+                    print Num/float(Num2)
+                </section>
+
+                <section data-markdown>
+                ##1.2 Flow Control
+
+                ---
+                </section>
+                <section data-markdown>
+                ##Flow Control
+
+                ---
+
+                There are 3 types of flow control:
+
+                - If statement
+                - While statement
+                - For statement
+                </section>
+
+                <section data-markdown>
+                ## If statement
+
+                ---
+                    #We define a variable Guess to be inputted at the prompt:
+                    Guess=input('Guess a number:')
+                    #We use the if statement to check a condition.
+                    #We're using modulo arithmetic to check if the guess is a multiple of 2:
+                    if Guess%2==0:
+                    #If the guess is a multiple of 2 we print a statement to the prompt:
+                        print "Your guess was an even number"
+                    #If the guess is not a multiple of 2 we print a different statement:
+                    else:
+                        print "Your guess was an odd number"
+
+
+                - **In python indentation is important!**
+                - In all languages indentation is good practice, in python it is a requirement.
+
+                </section>
+
+                <section data-markdown>
+                ## While statement
+
+                ---
+
+                    #We set an initial guess:
+                    Correct_guess=9
+                    #We define a variable Guess through input at the prompt:
+                    Guess=input('What is my favorite number:')
+                    #We use the while command to repeatedly evaluate whether or not the user guesses correctly.
+                    while Guess != Correct_guess:
+                        #We embed an if statement within this while loop to help the user guess correctly.
+                        if Guess > Correct_guess:
+                            Guess=input('Your previous guess was too high:')
+                        else:
+                            Guess=input('Your previous guess was too low:')
+                    #Note the indentation levels indicating that we are outside of the while loop.
+                    print "Great guess!"
+                </section>
+
+
+                <section data-markdown>
+                ## For statement
+
+                ---
+
+                    #The for statement is a very powerful statement that allows us to loop over elements in a list (we will look at lists closely shortly).
+                    for i in [1,2,3,4]:
+                        print i
+                </section>
+
+
+                <section data-markdown>
+                ## For statement
+
+                ---
+
+                    #We can iterate over all types of variables:
+                    for i in ["Queueing Theory","Game Theory","Inventory Theory","Reliability Theory","Project Management","Decision Analysis"]:
+                        #We check if the string 'Theory' is contained within each element of the above list:
+                        if "Theory" in i:
+                            print i
+                </section>
+
+                <section data-markdown>
+                ## 1.3 Functions
+
+                ---
+
+                </section>
+
+
+                <section data-markdown>
+                ## Functions
+
+                ---
+
+                    #To create a function we use the 'def' statement:
+                    def Hi():
+                        """
+                        This function simply prints a short statement. (This is a shorter way of writing longer comments, it's good practice to always include a description of what a function does).
+                        """
+                        print "Hello everybody!"
+
+                    Hi()
+                </section>
+
+
+                <section data-markdown>
+                ## Functions
+
+                ---
+
+                    #We can also pass arguments to a function:
+                    def Fibonacci_Function(n):
+                        """
+                        This returns the nth Fibonacci number.
+                        """
+                        #We have 2 statements to check initial conditions
+                        if n==0:
+                            return 1
+                        #We use the 'else if' statement: "elif":
+                        elif n==1:
+                            return 1
+                        a,b=0,1
+                        #We use a for statement with the range command.
+                        for k in range(n):
+                            #We here use simultaneous assignment:
+                            a,b=b,a+b
+                        return b
+
+                </section>
+
+                <section data-markdown>
+                ## 1.4 Data Structues
+
+                ---
+                </section>
+                <section data-markdown>
+                ## Data Structures
+
+                ---
+
+                The variables we saw earlier (and others) can be "contained" in various types of data structures:
+
+                - Lists
+                - Dictionaries
+
+                </section>
+
+                <section data-markdown>
+                ## Lists
+
+                ---
+
+                A list is a data structure that holds an ordered collection of 'objects'.
+
+                    #We define a list using the range command that gives us a collection of integers:
+                    My_list=range(6)
+                    print My_list
+                    #We can index elements of a list in the same way we indexed strings:
+                    print My_list[0]
+                    #An important 'method' that can be used on lists is the 'append' method which lets us add an object to a list:
+                    My_list.append(100)
+                    print My_list
+                </section>
+
+                <section data-markdown>
+                ## Dictionaries
+
+                ---
+
+                In python Dictionaries are a type of "Hash Table":
+
+                - Unordered set of *key*:*value* pairs.
+                - A phone book
+                - An efficient way of storing data that needs to be queried often.
+
+                </section>
+
+                <section data-markdown>
+                ## Phonebook
+
+                ---
+
+                A bad phone book:
+
+                    PB=[[Vince,3],[Zoe,2],[Julien,6],[Thomas,10],[Mike,1],[Matt,4]]
+
+                ![A bad phone book](https://docs.google.com/drawings/pub?id=1QlxzX6QVWrWcsjvFQzmF5f3kPzs97jWG_xywX3lajNU&amp;w=693&amp;h=101)
+                </section>
+
+                <section data-markdown>
+                ## Phonebook
+
+                ---
+
+                A good phone book:
+
+                    #This is the syntax for a python dictionary, made up of 'keys' and corresponding 'values':
+                    PB={Vince:3,Zoe:2,Julien:6,Thomas:10,Mike:1,Matt:4]
+
+                ![A good phone book](https://docs.google.com/drawings/pub?id=1y4zAM01OZC76oxt2rf-6Ie-5AY1vLV8Q-mHdOwS920o&amp;w=693&amp;h=101)
+                </section>
+
+
+                <section data-markdown>
+                ## Dictionaries
+
+                ---
+
+                    #Creating a dictionary:
+                    My_dictionary={"Vince":3,"Zoe":2,"Julien":6,"Thomas":10,"Mike":1,"Matt":4}
+                    #Adding 10 to the value associated to the key: "Zoe":
+                    My_dictionary["Zoe"]+=10
+                    print My_dictionary
+
+                </section>
 
 			</div>
 
@@ -292,7 +592,7 @@
 				history: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+				transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
