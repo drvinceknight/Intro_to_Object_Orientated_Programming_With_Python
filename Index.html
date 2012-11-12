@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Object Orientated Programming through Python</title>
+
+		<meta name="" content="">
+		<meta name="Vincent Knight" content="">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section data-markdown>
+                    ##Introduction to Object Orientated Programming Through Python.
+                    ####Vincent Knight
+                    [www.vincent-knight.com](http://www.vincent-knight.com)
+
+                </section>
+
+
+                <section data-markdown>
+                    ##At the end of today you will:
+
+                    ---
+
+                    1. Be able to program using [python](http://www.python.org).
+
+                    2. Understand the basic ideas behind Object Orientated Programming.
+
+                    3. Use your skills in a mini "hackathon" to solve a problem.
+                </section>
+
+                <section data-markdown>
+                ## 1. Basic python:
+
+                ---
+
+                - Variables
+                - Flow Control
+                - Functions
+                - Data Structures
+                </section>
+
+                <section data-markdown>
+                ## 2. Basic OOP:
+
+                ---
+
+                - Classes
+                - Attributes
+                - Methods
+                - Inheritance
+                </section>
+
+                <section data-markdown>
+                ## 3. Supermarket Challenge
+
+                ---
+                </section>
+
+                <section data-markdown>
+                ##Guido van Rossum
+
+                ---
+
+                [![Guido](https://lh3.googleusercontent.com/-HFNRtzJ3G1o/Tio1OMq9OwI/AAAAAAAAE58/mxXZVVe-PMo/s713/guido_avatar_big.jpg)](https://plus.google.com/115212051037621986145/posts)
+                </section>
+
+
+                <section data-markdown>
+                ##What is python?
+
+                ---
+                [![the python logo](http://www.python.org/images/python-logo.gif)](http://www.python.org)
+
+                - Simple
+                - Easy to Learn
+                - Free and Open Source
+                - High-level Language
+                - Portable
+                - Interpreted
+                - Open Source
+                - **Object Orientated**
+                - Libraries
+
+                </section>
+
+
+                <section data-markdown>
+                ##What do I need to use python?
+
+                ---
+
+                - [Python](www.python.org)
+                - A text editor (required for longer programs)
+
+                </section>
+
+                <section data-markdown>
+                    <section >
+                    ##IDLE (Mac)
+
+                    ---
+
+                    ![Screenshot of IDLE on mac](IDLE_Screenshot.png)
+                    </section>
+
+                    <section >
+                    ##Terminal (Mac)
+
+                    ---
+
+                    ![Screenshot of terminal on mac](Terminal_Screenshot.png)
+                    </section>
+
+                    <section >
+                    ##IDLE (Windows)
+
+                    ---
+
+                    ![Screenshot of IDLE on Windows](IDLE_Screenshot_Win.png)
+                    </section>
+
+                    <section >
+                    ##Terminal (Windows)
+
+                    ---
+
+                    ![Screenshot of terminal on Windows](Terminal_Screenshot_Win.png)
+                    </section>
+
+                    <section >
+                    ##Terminal (Ubuntu)
+
+                    ---
+
+                    ![Screenshot of terminal on Ubuntu](Terminal_Screenshot_Ubuntu.png)
+                    </section>
+
+                </section>
+
+                <section data-markdown>
+                ##Hello world!
+
+                ---
+                - Type the following in to the Interpreter:
+
+                        print "Hello world!"
+                - Press Enter. (This should convince us that we have python running on our machines).
+                </section>
+
+
+                <section data-markdown>
+                    <section>
+                    ##IDLE Editor (Mac)
+
+                    ---
+                    ![Screenshot of IDLE Editor on Mac](Editor_Screenshot_Mac.png)
+                    </section>
+                    <section>
+                    ##IDLE Editor (Windows)
+
+                    ---
+                    ![Screenshot of IDLE Editor on Mac](Editor_Screenshot_Win.png)
+                    </section>
+                    <section>
+                    ##Vim (Mac)
+
+                    ---
+                    ![Screenshot of Vim on Mac](Vim_Screenshot_Mac.png)
+                    </section>
+                    <section>
+                    ##Vim (Ubuntu)
+
+                    ---
+                    ![Screenshot of Vim on Mac](Vim_Screenshot_Ubuntu.png)
+                    </section>
+                    <section>
+                    ##Notepad++ (Mac)
+
+                    ---
+                    ![Screenshot of Notepad++ on Mac](Notepadpp_Screenshot_Mac.png)
+                    </section>
+                    <section>
+                    ##Notepad++ (Windows)
+
+                    ---
+                    ![Screenshot of Notepad++ on Win](Notepadpp_Screenshot_Win.png)
+                    </section>
+
+                </section>
+
+                <section data-markdown>
+                ##Hello World! (again)
+
+                ---
+                - Create a new python file in IDLE. Type the following in to the Interpreter:
+
+
+                        print "Hello world!"
+
+                - Run the script (F5). (This now convinces us that we have a text editor and that we can use it to write larger portions of python code).
+
+                </section>
+
+                <section data-markdown>
+                ## Getting help
+
+                ---
+
+                - [Google](https://www.google.com)
+                - Some great books:
+
+                    - ["A byte of python"](http://www.swaroopch.com/notes/python/)
+                    - ["Thinking in python"](http://mindview.net/Books/TIPython)
+                - The help command in python:
+
+                        help("range")
+                </section>
+
+
+                <section data-markdown>
+                ##Comments in code
+
+                ---
+
+                - Python is known for the clarity of it's syntax: "interpretable pseudo code"
+                - **But** it is still important to write code with comments.
+                - Add the following to your python script:
+
+                        print "Hello world!"
+                        #That was a command, this is a comment
+                        print "Writing comments is awesome"#Here is another comment...
+
+                "Code tells you how, comments tell you why."
+
+                </section>
+                <section data-markdown>
+                ##1.1 Variables
+
+                ---
+                </section>
+                <section data-markdown>
+                ##Variables
+
+                ---
+
+                - String="Hello world!"
+
+                        String="Hello world!"
+                        print String
+
+                - Numeric=2
+
+                        Num_1=2
+                        Num_2=3.5
+                        print Num_1+Num_2
+
+
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+
+                    #We define a variable called String:
+                    String="My name is Vince"
+                    #Let's print the 5th letter of String (Note that python starts counting at 0):
+                    print String[4]
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+                    #We print the elements in position 1 to 4 (not included) in String:
+                    print String[1:4]
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+                    #We can use the ".index" method to find the position of the first occurrence of an element in String:
+                    a=String.index("V")
+                    print a
+                </section>
+
+                <section data-markdown>
+                ##String manipulation
+
+                ---
+                    #If we leave 1 position empty python returns "everything":
+                    print String[a:]
+                    print String[:a]
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+
+                    #We define a variable called Num:
+                    Num=3
+                    #We can add 1 to Num in 2 ways:
+                    Num=Num+1
+                    Num+=1
+                    print Num
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+                    #We can carry out other numeric operations in a similar way:
+                    Num-=2
+                    Num*=3
+                    Num**=2
+                    print Num
+                </section>
+
+
+                <section data-markdown>
+                ##Numeric manipulation
+
+                ---
+                    #Note that we might not get what we expect with division:
+                    Num2=2
+                    print Num/Num2
+                    #Try (there are other ways):
+                    print Num/float(Num2)
+                </section>
+
+                <section data-markdown>
+                ##1.2 Flow Control
+
+                ---
+                </section>
+                <section data-markdown>
+                ##Flow Control
+
+                ---
+
+                There are 3 types of flow control:
+
+                - If statement
+                - While statement
+                - For statement
+                </section>
+
+                <section data-markdown>
+                ## If statement
+
+                ---
+                    #We define a variable Guess to be inputted at the prompt:
+                    Guess=input('Guess a number:')
+                    #We use the if statement to check a condition.
+                    #We're using modulo arithmetic to check if the guess is a multiple of 2:
+                    if Guess%2==0:
+                    #If the guess is a multiple of 2 we print a statement to the prompt:
+                        print "Your guess was an even number"
+                    #If the guess is not a multiple of 2 we print a different statement:
+                    else:
+                        print "Your guess was an odd number"
+
+
+                - **In python indentation is important!**
+                - In all languages indentation is good practice, in python it is a requirement.
+
+                </section>
+
+                <section data-markdown>
+                ## While statement
+
+                ---
+
+                    #We set an initial guess:
+                    Correct_guess=9
+                    #We define a variable Guess through input at the prompt:
+                    Guess=input('What is my favorite number:')
+                    #We use the while command to repeatedly evaluate whether or not the user guesses correctly.
+                    while Guess != Correct_guess:
+                        #We embed an if statement within this while loop to help the user guess correctly.
+                        if Guess > Correct_guess:
+                            Guess=input('Your previous guess was too high:')
+                        else:
+                            Guess=input('Your previous guess was too low:')
+                    #Note the indentation levels indicating that we are outside of the while loop.
+                    print "Great guess!"
+                </section>
+
+
+                <section data-markdown>
+                ## For statement
+
+                ---
+
+                    #The for statement is a very powerful statement that allows us to loop over elements in a list (we will look at lists closely shortly).
+                    for i in [1,2,3,4]:
+                        print i
+                </section>
+
+
+                <section data-markdown>
+                ## For statement
+
+                ---
+
+                    #We can iterate over all types of variables:
+                    for i in ["Queueing Theory","Game Theory","Inventory Theory","Reliability Theory","Project Management","Decision Analysis"]:
+                        #We check if the string 'Theory' is contained within each element of the above list:
+                        if "Theory" in i:
+                            print i
+                </section>
+
+                <section data-markdown>
+                ## 1.3 Functions
+
+                ---
+
+                </section>
+
+
+                <section data-markdown>
+                ## Functions
+
+                ---
+
+                    #To create a function we use the 'def' statement:
+                    def Hi():
+                        """
+                        This function simply prints a short statement. (This is a shorter way of writing longer comments, it's good practice to always include a description of what a function does).
+                        """
+                        print "Hello everybody!"
+
+                    Hi()
+                </section>
+
+
+                <section data-markdown>
+                ## Functions
+
+                ---
+
+                    #We can also pass arguments to a function:
+                    def Fibonacci_Function(n):
+                        """
+                        This returns the nth Fibonacci number.
+                        """
+                        #We have 2 statements to check initial conditions
+                        if n==0:
+                            return 1
+                        #We use the 'else if' statement: "elif":
+                        elif n==1:
+                            return 1
+                        a,b=0,1
+                        #We use a for statement with the range command.
+                        for k in range(n):
+                            #We here use simultaneous assignment:
+                            a,b=b,a+b
+                        return b
+
+                </section>
+
+                <section data-markdown>
+                ## 1.4 Data Structues
+
+                ---
+                </section>
+                <section data-markdown>
+                ## Data Structures
+
+                ---
+
+                The variables we saw earlier (and others) can be "contained" in various types of data structures:
+
+                - Lists
+                - Dictionaries
+
+                </section>
+
+                <section data-markdown>
+                ## Lists
+
+                ---
+
+                A list is a data structure that holds an ordered collection of 'objects'.
+
+                    #We define a list using the range command that gives us a collection of integers:
+                    My_list=range(6)
+                    print My_list
+                    #We can index elements of a list in the same way we indexed strings:
+                    print My_list[0]
+                    #An important 'method' that can be used on lists is the 'append' method which lets us add an object to a list:
+                    My_list.append(100)
+                    print My_list
+                </section>
+
+                <section data-markdown>
+                ## Dictionaries
+
+                ---
+
+                In python Dictionaries are a type of "Hash Table":
+
+                - Unordered set of *key*:*value* pairs.
+                - A phone book
+                - An efficient way of storing data that needs to be queried often.
+
+                </section>
+
+                <section data-markdown>
+                ## Phonebook
+
+                ---
+
+                A bad phone book:
+
+                    PB=[[Vince,3],[Zoe,2],[Julien,6],[Thomas,10],[Mike,1],[Matt,4]]
+
+                ![A bad phone book](https://docs.google.com/drawings/pub?id=1QlxzX6QVWrWcsjvFQzmF5f3kPzs97jWG_xywX3lajNU&amp;w=693&amp;h=101)
+                </section>
+
+                <section data-markdown>
+                ## Phonebook
+
+                ---
+
+                A good phone book:
+
+                    #This is the syntax for a python dictionary, made up of 'keys' and corresponding 'values':
+                    PB={Vince:3,Zoe:2,Julien:6,Thomas:10,Mike:1,Matt:4]
+
+                ![A good phone book](https://docs.google.com/drawings/pub?id=1y4zAM01OZC76oxt2rf-6Ie-5AY1vLV8Q-mHdOwS920o&amp;w=693&amp;h=101)
+                </section>
+
+
+                <section data-markdown>
+                ## Dictionaries
+
+                ---
+
+                    #Creating a dictionary:
+                    My_dictionary={"Vince":3,"Zoe":2,"Julien":6,"Thomas":10,"Mike":1,"Matt":4}
+                    #Adding 10 to the value associated to the key: "Zoe":
+                    My_dictionary["Zoe"]+=10
+                    print My_dictionary
+
+                </section>
+
+			</div>
+
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
