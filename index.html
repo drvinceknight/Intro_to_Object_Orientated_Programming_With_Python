@@ -636,7 +636,7 @@
                     Vince=Student()
 
                     #We can call Vince to see what "it" is:
-                    Vince
+                    print Vince
 
                 Create another instance and verify that it is different.
                 </section>
@@ -684,8 +684,10 @@
                     print Vince.courses
                     #We can change the value of the age:
                     Vince.age=28
+                    print Vince.age
                     #We can change the value of sex:
                     Vince.sex="M"
+                    print Vince.age
                 </section>
 
                 <section data-markdown>
@@ -707,10 +709,11 @@
                     #We can define methods within our class:
                         def have_a_birthday(self):
                             self.age+=1
-                     #Let us see how this works:
-                     Vince=Student()
-                     Vince.have_a_birthday()
-                     print Vince.age
+                    #Let us see how this works:
+                    Vince=Student()
+                    print Vince.age
+                    Vince.have_a_birthday()
+                    print Vince.age
 
                 </section>
 
@@ -722,7 +725,7 @@
                     #The init method is a special method that allows us to pass arguments when we generate an instance of a class.
                     class Student():
                         def __init__(self,courses,age,sex):
-                            self.courses=course
+                            self.courses=courses
                             self.age=age
                             self.sex=sex
                     #We can define methods within our class:
@@ -742,6 +745,78 @@
 
                 ---
                 </section>
+
+                <section data-markdown>
+                ##New classes from old
+
+                ---
+                    #We can use a class to create new classes:
+                    class Math_Student(Student):
+                        favorite_class="Mathematics"
+                    #Let us create another instance
+                    Becky=Math_Student(["Mathematics","Biology"],29,"Female")
+                    print Becky.courses
+                    print Becky.age
+                    print Becky.sex
+                    print Becky.favorite_class
+                </section>
+
+                <section data-markdown>
+                ## Summary
+
+                ---
+                - Classes
+                - Attributes
+                - Methods
+                - Inheritance
+                </section>
+
+                <section data-markdown>
+                ## Advantages of OOP
+
+                ---
+
+                - Simplicity
+                - Modularity
+                - Modifiability
+                - Extensibility
+                - Re-usability
+                </section>
+
+
+                <section data-markdown>
+                ## Also: modules.
+
+                ---
+
+                - Modules (built in):
+                    - [csv](http://docs.python.org/2/library/csv.html)
+                    - [math](http://docs.python.org/2/library/math.html)
+                    - [random](http://docs.python.org/2/library/random.html)
+                    - [easy to create your own](http://docs.python.org/2/tutorial/modules.html)
+
+                - Modules (not built in):
+                    - [matplotlib](http://matplotlib.org/)
+                    - [scipy](http://www.scipy.org/)
+                    - [sage](http://www.sagemath.org)
+                    - [...](http://pypi.python.org/pypi)
+                </section>
+
+                <section data-markdown>
+                ## Exercise
+
+                Starting with the file [Exercise.py]():
+
+                - The file contains a dictionary of course codes, course names
+                - The file contains a list of students and their associated course codes
+
+                Output (print to screen):
+
+                - The name of each student and the name of their course iff they are enrolled on at least one course.
+                - The total number of students on each course.
+                </section>
+
+
 			</div>
 
 		</div>
