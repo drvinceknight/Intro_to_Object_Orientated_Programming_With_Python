@@ -579,6 +579,169 @@
                 ## 2. Object Orientated Programming
                 </section>
 
+                <section data-markdown>
+                ## Alan Kay
+
+                ---
+
+                [![Alan Kay](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alan_Kay2.jpg/220px-Alan_Kay2.jpg)](http://en.wikipedia.org/wiki/Alan_Kay)
+                </section>
+
+                <section data-markdown>
+                ## "I wanted to get rid of data"
+
+                ---
+
+                [![Objects as cells](https://docs.google.com/drawings/pub?id=1Vg1NZ-n3KlLC5b10M0PEVwMeUTPjkUMX2zVNzwYYC8o&w=400)](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en)
+
+                </section>
+
+                <section data-markdown>
+                ## Object Orientated Programming
+
+                ---
+
+                ![Summary](https://docs.google.com/drawings/pub?id=1bpeHjNnJRq4c8g8AgL3-J0QqgpnmcXmcr4AVte9EGLI&w=700)
+
+                </section>
+
+                <section data-markdown>
+                ## 2.1 Classes
+
+                ---
+
+                </section>
+
+                <section data-markdown>
+                ## Defining a class
+
+                ---
+
+                    #We will define a new class called "Student"
+                    class Student():
+                        pass
+                </section>
+
+
+                <section data-markdown>
+                ## Creating an instance of our class
+
+                ---
+
+                    #We will define a new class called "Student"
+                    class Student():
+                        pass
+
+                    #We create Vince, an instance of Student:
+                    Vince=Student()
+
+                    #We can call Vince to see what "it" is:
+                    Vince
+
+                Create another instance and verify that it is different.
+                </section>
+
+
+                <section data-markdown>
+                ## 2.1 Attributes
+
+                ---
+                </section>
+
+
+                <section data-markdown>
+                ## Giving objects attributes
+
+                ---
+
+                    #We modify our class Student so that our object has numerous attributes:
+                    class Student():
+                        courses=["Biology","Mathematics","English"]
+                        age=5
+                        sex="Male"
+                    #Let us now create Vince again:
+                    Vince=Student()
+                </section>
+
+                <section data-markdown>
+                ## Accessing attributes
+
+                ---
+
+                    #We can take a look at the values of each attribute:
+                    print Vince.courses
+                    print Vince.age
+                    print Vince.sex
+                </section>
+
+                <section data-markdown>
+                ## Manipulating attributes
+
+                ---
+
+                    #We can add a new course:
+                    Vince.courses.append("French")
+                    print Vince.courses
+                    #We can change the value of the age:
+                    Vince.age=28
+                    #We can change the value of sex:
+                    Vince.sex="M"
+                </section>
+
+                <section data-markdown>
+                ## 2.1 Methods
+
+                ---
+
+                </section>
+
+                <section data-markdown>
+                ## Defining a method
+
+                ---
+
+                    class Student()
+                        courses=["Biology","Mathematics","English"]
+                        age=5
+                        sex="Male"
+                    #We can define methods within our class:
+                        def have_a_birthday(self):
+                            self.age+=1
+                     #Let us see how this works:
+                     Vince=Student()
+                     Vince.have_a_birthday()
+                     print Vince.age
+
+                </section>
+
+                <section data-markdown>
+                ## The init method
+
+                ---
+
+                    #The init method is a special method that allows us to pass arguments when we generate an instance of a class.
+                    class Student():
+                        def __init__(self,courses,age,sex):
+                            self.courses=course
+                            self.age=age
+                            self.sex=sex
+                    #We can define methods within our class:
+                        def have_a_birthday(self):
+                            self.age+=1
+                    #Let us see how this works:
+                    Vince=Student(["Biology","Math"],28,"Male")
+                    print Vince.courses
+                    print Vince.age
+                    print Vince.sex
+
+
+                </section>
+
+                <section data-markdown>
+                ## 2.4 Inheritance
+
+                ---
+                </section>
 			</div>
 
 		</div>
