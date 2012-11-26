@@ -48,7 +48,7 @@
 
                     ---
 
-                    1. Be able to program using [python](http://www.python.org).
+                    1. Be able to program using [Python](http://www.python.org).
 
                     2. Understand the basic ideas behind Object Orientated Programming.
 
@@ -56,7 +56,7 @@
                 </section>
 
                 <section data-markdown>
-                ## 1. Basic python:
+                ## 1. Basic Python
 
                 ---
 
@@ -67,7 +67,17 @@
                 </section>
 
                 <section data-markdown>
-                ## 2. Basic OOP:
+                ## Summary
+
+                ---
+                - Variables
+                - Flow Control
+                - Functions
+                - Data Structures
+                </section>
+
+                <section data-markdown>
+                ## 2. Basic OOP
 
                 ---
 
@@ -93,7 +103,7 @@
 
 
                 <section data-markdown>
-                ##What is python?
+                ##What is Python?
 
                 ---
                 [![the python logo](http://www.python.org/images/python-logo.gif)](http://www.python.org)
@@ -101,18 +111,31 @@
                 - Simple
                 - Easy to Learn
                 - Free and Open Source
+                </section>
+                <section data-markdown>
+                ##What is Python?
+
+                ---
+                [![the python logo](http://www.python.org/images/python-logo.gif)](http://www.python.org)
+
                 - High-level Language
                 - Portable
                 - Interpreted
-                - Open Source
-                - **Object Orientated**
                 - Libraries
+                </section>
+                <section data-markdown>
+                ##What is Python?
+
+                ---
+                [![the python logo](http://www.python.org/images/python-logo.gif)](http://www.python.org)
+
+                - **Object Orientated**
 
                 </section>
 
 
                 <section data-markdown>
-                ##What do I need to use python?
+                ##What do I need to use Python?
 
                 ---
 
@@ -219,12 +242,12 @@
                 ##Hello World! (again)
 
                 ---
-                - Create a new python file in IDLE. Type the following in to the Interpreter:
+                - Create a new Python file in IDLE. Type the following:
 
 
                         print "Hello world!"
 
-                - Run the script (F5). (This now convinces us that we have a text editor and that we can use it to write larger portions of python code).
+                - Run the script (F5). (This now convinces us that we have a text editor and that we can use it to write larger portions of Python code).
 
                 </section>
 
@@ -236,9 +259,9 @@
                 - [Google](https://www.google.com)
                 - Some great books:
 
-                    - ["A byte of python"](http://www.swaroopch.com/notes/python/)
-                    - ["Thinking in python"](http://mindview.net/Books/TIPython)
-                - The help command in python:
+                    - ["A byte of Python"](http://www.swaroopch.com/notes/python/)
+                    - ["Thinking in Python"](http://mindview.net/Books/TIPython)
+                - The help command in Python:
 
                         help("range")
                 </section>
@@ -251,7 +274,7 @@
 
                 - Python is known for the clarity of it's syntax: "interpretable pseudo code"
                 - **But** it is still important to write code with comments.
-                - Add the following to your python script:
+                - Add the following to your Python script:
 
                         print "Hello world!"
                         #That was a command, this is a comment
@@ -291,7 +314,7 @@
 
                     #We define a variable called String:
                     String="My name is Vince"
-                    #Let's print the 5th letter of String (Note that python starts counting at 0):
+                    #Let's print the 5th letter of String (Note that Python starts counting at 0):
                     print String[4]
                 </section>
 
@@ -307,7 +330,7 @@
                 ##String manipulation
 
                 ---
-                    #We can use the ".index" method to find the position of the first occurrence of an element in String:
+                    #We can use the "index" method to find the position of the first occurrence of an element in String:
                     a=String.index("V")
                     print a
                 </section>
@@ -316,7 +339,7 @@
                 ##String manipulation
 
                 ---
-                    #If we leave 1 position empty python returns "everything":
+                    #If we leave 1 position empty Python returns "everything":
                     print String[a:]
                     print String[:a]
                 </section>
@@ -353,7 +376,7 @@
 
                 ---
                     #Note that we might not get what we expect with division:
-                    Num2=2
+                    Num2=5
                     print Num/Num2
                     #Try (there are other ways):
                     print Num/float(Num2)
@@ -369,7 +392,7 @@
 
                 ---
 
-                There are 3 types of flow control:
+                There are 3 types of flow control that we shall consider:
 
                 - If statement
                 - While statement
@@ -392,8 +415,8 @@
                         print "Your guess was an odd number"
 
 
-                - **In python indentation is important!**
-                - In all languages indentation is good practice, in python it is a requirement.
+                - **In Python indentation is important!**
+                - In all languages indentation is good practice, in Python it is a requirement.
 
                 </section>
 
@@ -500,7 +523,7 @@
 
                 ---
 
-                The variables we saw earlier (and others) can be "contained" in various types of data structures:
+                <p align="left">The variables we saw earlier (and others) can be "contained" in various types of data structures:</p>
 
                 - Lists
                 - Dictionaries
@@ -512,7 +535,7 @@
 
                 ---
 
-                A list is a data structure that holds an ordered collection of 'objects'.
+                <p align="left">A list is a data structure that holds an ordered collection of 'objects'.</p>
 
                     #We define a list using the range command that gives us a collection of integers:
                     My_list=range(6)
@@ -529,7 +552,7 @@
 
                 ---
 
-                In python Dictionaries are a type of "Hash Table":
+                In Python Dictionaries are a type of "Hash Table":
 
                 - Unordered set of *key*:*value* pairs.
                 - A phone book
@@ -556,7 +579,7 @@
 
                 A good phone book:
 
-                    #This is the syntax for a python dictionary, made up of 'keys' and corresponding 'values':
+                    #This is the syntax for a Python dictionary, made up of 'keys' and corresponding 'values':
                     PB={Vince:3,Zoe:2,Julien:6,Thomas:10,Mike:1,Matt:4]
 
                 ![A good phone book](https://docs.google.com/drawings/pub?id=1y4zAM01OZC76oxt2rf-6Ie-5AY1vLV8Q-mHdOwS920o&amp;w=693&amp;h=101)
@@ -643,7 +666,7 @@
 
 
                 <section data-markdown>
-                ## 2.1 Attributes
+                ## 2.2 Attributes
 
                 ---
                 </section>
@@ -687,11 +710,11 @@
                     print Vince.age
                     #We can change the value of sex:
                     Vince.sex="M"
-                    print Vince.age
+                    print Vince.sex
                 </section>
 
                 <section data-markdown>
-                ## 2.1 Methods
+                ## 2.3 Methods
 
                 ---
 
@@ -702,7 +725,7 @@
 
                 ---
 
-                    class Student()
+                    class Student():
                         courses=["Biology","Mathematics","English"]
                         age=5
                         sex="Male"
@@ -755,10 +778,14 @@
                         favorite_class="Mathematics"
                     #Let us create another instance
                     Becky=Math_Student(["Mathematics","Biology"],29,"Female")
+                    #This class has the attribute of the inherited class:
                     print Becky.courses
                     print Becky.age
                     print Becky.sex
                     print Becky.favorite_class
+                    #This class has the methods of the inherited class:
+                    Becky.have_a_birthday()
+                    print Becky.age
                 </section>
 
                 <section data-markdown>
@@ -783,23 +810,33 @@
                 - Re-usability
                 </section>
 
+                <section data-markdown>
+                ## Another important thing
+
+                ---
+                </section>
 
                 <section data-markdown>
-                ## Also: modules.
+                ## Libraries (built in)
 
                 ---
 
-                - Modules (built in):
-                    - [csv](http://docs.python.org/2/library/csv.html)
-                    - [math](http://docs.python.org/2/library/math.html)
-                    - [random](http://docs.python.org/2/library/random.html)
-                    - [easy to create your own](http://docs.python.org/2/tutorial/modules.html)
 
-                - Modules (not built in):
-                    - [matplotlib](http://matplotlib.org/)
-                    - [scipy](http://www.scipy.org/)
-                    - [sage](http://www.sagemath.org)
-                    - [...](http://pypi.python.org/pypi)
+                - [csv](http://docs.python.org/2/library/csv.html)
+                - [math](http://docs.python.org/2/library/math.html)
+                - [random](http://docs.python.org/2/library/random.html)
+                - [...](http://pypi.python.org/pypi)
+
+                </section>
+
+                <section data-markdown>
+                ## Libraries (not built in)
+
+                ---
+                - [matplotlib](http://matplotlib.org/)
+                - [scipy](http://www.scipy.org/)
+                - [sage](http://www.sagemath.org)
+                - [easy to create your own](http://docs.python.org/2/tutorial/modules.html)
                 </section>
 
                 <section data-markdown>
