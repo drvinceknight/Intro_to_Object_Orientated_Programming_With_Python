@@ -27,7 +27,7 @@ Slides are very much a work in progress but can be viewed [here](http://drvincek
 
 ##Challenge
 
-In the afternoon the students will be invited to compete (in teams) in a mini "hackathon" where they will be asked to write code that makes use of the OOP paradigm. In particular they are expected to delegate tasks within the group. See the "Supermarket_Challenge.md" file for further explanations.
+In the afternoon the students will be invited to compete (in teams) in a mini "hackathon" where they will be asked to write code that makes use of the OOP paradigm. In particular they are expected to delegate tasks within the group. See the corresponding README file file for further explanations.
 
 
 ---
