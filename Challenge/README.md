@@ -49,7 +49,7 @@ The following picture summarises your challenge:
 
 ##Evaluation:
 
-Your code will be evaluated by running it from a directory using the "[Evaluate.py]()" program.
+Your code will be evaluated by running it from a directory (containing the required data files) using the "[Evaluate.py]()" program.
 
 Your code will be evaluated in terms of:
 
