@@ -2,7 +2,7 @@
 
 ---
 
-In groups of 4 attempt to that would solve the following problem.
+In groups of 4 attempt to write code that would solve the following problem.
 
 ##Company:
 
@@ -48,6 +48,8 @@ The following picture summarises your challenge:
 ![The underlying structure](https://github.com/drvinceknight/Intro_to_Object_Orientated_Programming_With_Python/blob/master/Challenge/Supermarket_Challenge.png?raw=true)
 
 ##Evaluation:
+
+Your code will be evaluated by running it from a directory using the "[Evaluate.py]()" program.
 
 Your code will be evaluated in terms of:
 
