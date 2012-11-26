@@ -49,6 +49,14 @@ The following picture summarises your challenge:
 
 ##Evaluation:
 
+Your code will be evaluated by placing it in a directory containing 3 files:
+
+- 'Stock_Report.csv'
+- 'Sale_History.csv'
+- 'Promotions_History.csv'
+
+Your code should print the sales taken to screen and output a csv file containing the Loyalty points information.
+
 Your code will be evaluated in terms of:
 
 - Precision (does it work and if so is it correct? - This is an objective criteria)
