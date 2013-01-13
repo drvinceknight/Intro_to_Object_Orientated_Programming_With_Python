@@ -193,13 +193,13 @@
                     ##IDLE Editor (Mac)
 
                     ---
-                    ![Screenshot of IDLE Editor on Mac](Editor_Screenshot_Mac.png)
+                    ![Screenshot of IDLE Editor on Mac](IDLE_Screenshot.png)
                     </section>
                     <section>
                     ##IDLE Editor (Windows)
 
                     ---
-                    ![Screenshot of IDLE Editor on Mac](Editor_Screenshot_Win.png)
+                    ![Screenshot of IDLE Editor on Windows](Editor_Screenshot_Win.png)
                     </section>
                     <section>
                     ##Vim (Mac)
@@ -273,6 +273,15 @@
                 "Code tells you how, comments tell you why."
 
                 </section>
+
+                <section data-markdown>
+                <h3>Style</h3>
+                <hr>
+                *A Foolish Consistency is the Hobgoblin of Little Minds*
+                <iframe src="http://www.python.org/dev/peps/pep-0008/" width="700" height="400"></iframe>
+
+                </section>
+
                 <section data-markdown>
                 ##1.1 Variables
 
@@ -285,14 +294,14 @@
 
                 - Character variables.
 
-                        String="Hello world"
-                        print String
+                        string = "Hello world"
+                        print string
 
                 - Numeric variables.
 
-                        Num_1=2
-                        Num_2=3.5
-                        print Num_1+Num_2
+                        num_1 = 2
+                        num_2 = 3.5
+                        print num_1 + num_2
 
 
                 </section>
@@ -303,9 +312,9 @@
                 ---
 
                     #We define a variable called String:
-                    String="My name is Vince"
+                    string="My name is Vince"
                     #Let's print the 5th letter of String (Note that Python starts counting at 0):
-                    print String[4]
+                    print string[4]
                 </section>
 
                 <section data-markdown>
@@ -313,7 +322,7 @@
 
                 ---
                     #We print the elements in position 1 to 4 (not included) in String:
-                    print String[1:4]
+                    print string[1:4]
                 </section>
 
                 <section data-markdown>
@@ -321,7 +330,7 @@
 
                 ---
                     #We can use the "index" method to find the position of the first occurrence of an element in String:
-                    a=String.index("V")
+                    a=string.index("V")
                     print a
                 </section>
 
@@ -330,8 +339,8 @@
 
                 ---
                     #If we leave 1 position empty Python returns "everything":
-                    print String[a:]
-                    print String[:a]
+                    print string[a:]
+                    print string[:a]
                 </section>
 
 
@@ -341,11 +350,11 @@
                 ---
 
                     #We define a variable called Num:
-                    Num=3
+                    num = 3
                     #We can add 1 to Num in 2 ways:
-                    Num=Num+1
-                    Num+=1
-                    print Num
+                    num = num+1
+                    num += 1
+                    print num
                 </section>
 
 
@@ -354,10 +363,10 @@
 
                 ---
                     #We can carry out other numeric operations in a similar way:
-                    Num-=2
-                    Num*=3
-                    Num**=2
-                    print Num
+                    num -= 2
+                    num *= 3
+                    num **= 2
+                    print num
                 </section>
 
 
@@ -366,10 +375,10 @@
 
                 ---
                     #Note that we might not get what we expect with division:
-                    Num2=5
-                    print Num/Num2
+                    num2 = 5
+                    print num / num2
                     #Try (there are other ways):
-                    print Num/float(Num2)
+                    print num/float(num2)
                 </section>
 
                 <section data-markdown>
@@ -394,10 +403,10 @@
 
                 ---
                     #We define a variable Guess to be inputted at the prompt:
-                    Guess=input('Guess a number:')
+                    guess = input('Guess a number:')
                     #We use the if statement to check a condition.
                     #We're using modulo arithmetic to check if the guess is a multiple of 2:
-                    if Guess%2==0:
+                    if guess % 2 == 0:
                     #If the guess is a multiple of 2 we print a statement to the prompt:
                         print "Your guess was an even number"
                     #If the guess is not a multiple of 2 we print a different statement:
@@ -416,16 +425,16 @@
                 ---
 
                     #We set an initial guess:
-                    Correct_guess=9
+                    correct_guess = 9
                     #We define a variable Guess through input at the prompt:
-                    Guess=input('What is my favorite number:')
+                    guess = input('What is my favorite number:')
                     #We use the while command to repeatedly evaluate whether or not the user guesses correctly.
-                    while Guess != Correct_guess:
+                    while guess != correct_guess:
                         #We embed an if statement within this while loop to help the user guess correctly.
-                        if Guess > Correct_guess:
-                            Guess=input('Your previous guess was too high:')
+                        if guess > correct_guess:
+                            guess = input('Your previous guess was too high:')
                         else:
-                            Guess=input('Your previous guess was too low:')
+                            guess = input('Your previous guess was too low:')
                     #Note the indentation levels indicating that we are outside of the while loop.
                     print "Great guess!"
                 </section>
@@ -468,13 +477,13 @@
                 ---
 
                     #To create a function we use the 'def' statement:
-                    def Hi():
+                    def hi():
                         """
                         This function simply prints a short statement. (This is a shorter way of writing longer comments, it's good practice to always include a description of what a function does).
                         """
                         print "Hello everybody!"
 
-                    Hi()
+                    hi()
                 </section>
 
 
@@ -484,21 +493,21 @@
                 ---
 
                     #We can also pass arguments to a function:
-                    def Fibonacci_Function(n):
+                    def fibonacci_function(n):
                         """
                         This returns the nth Fibonacci number.
                         """
                         #We have 2 statements to check initial conditions
-                        if n==0:
+                        if n == 0:
                             return 1
                         #We use the 'else if' statement: "elif":
-                        elif n==1:
+                        elif n == 1:
                             return 1
-                        a,b=0,1
+                        a, b = 0, 1
                         #We use a for statement with the range command.
                         for k in range(n):
                             #We here use simultaneous assignment:
-                            a,b=b,a+b
+                            a, b = b, a+b
                         return b
 
                 </section>
