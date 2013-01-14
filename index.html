@@ -312,7 +312,7 @@
                 ---
 
                     #We define a variable called String:
-                    string="My name is Vince"
+                    string = "My name is Vince"
                     #Let's print the 5th letter of String (Note that Python starts counting at 0):
                     print string[4]
                 </section>
@@ -330,7 +330,7 @@
 
                 ---
                     #We can use the "index" method to find the position of the first occurrence of an element in String:
-                    a=string.index("V")
+                    a = string.index("V")
                     print a
                 </section>
 
@@ -352,7 +352,7 @@
                     #We define a variable called Num:
                     num = 3
                     #We can add 1 to Num in 2 ways:
-                    num = num+1
+                    num = num + 1
                     num += 1
                     print num
                 </section>
@@ -378,7 +378,7 @@
                     num2 = 5
                     print num / num2
                     #Try (there are other ways):
-                    print num/float(num2)
+                    print num / float(num2)
                 </section>
 
                 <section data-markdown>
@@ -402,7 +402,7 @@
                 ## If Statement
 
                 ---
-                    #We define a variable Guess to be inputted at the prompt:
+                    #We define a variable guess to be inputted at the prompt:
                     guess = input('Guess a number:')
                     #We use the if statement to check a condition.
                     #We're using modulo arithmetic to check if the guess is a multiple of 2:
@@ -449,7 +449,7 @@ print "Great guess!"
                 ---
 
                     #The for statement is a very powerful statement that allows us to loop over elements in a list (we will look at lists closely shortly).
-                    for i in [1,2,3,4]:
+                    for i in [1, 2, 3, 4]:
                         print i
                 </section>
 
@@ -460,7 +460,7 @@ print "Great guess!"
                 ---
 
                     #We can iterate over all types of variables:
-                    for i in ["Queueing Theory","Game Theory","Inventory Theory","Reliability Theory","Project Management","Decision Analysis"]:
+                    for i in ["Queueing Theory", "Game Theory", "Inventory Theory", "Reliability Theory", "Project Management", "Decision Analysis"]:
                         #We check if the string 'Theory' is contained within each element of the above list:
                         if "Theory" in i:
                             print i
@@ -510,7 +510,7 @@ print "Great guess!"
                         #We use a for statement with the range command.
                         for k in range(n):
                             #We here use simultaneous assignment:
-                            a, b = b, a+b
+                            a, b = b, a + b
                         return b
 
                 </section>
@@ -569,7 +569,7 @@ print "Great guess!"
 
                 A bad phone book:
 
-                    pb = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas" ,10], ["Mike", 1], ["Matt", 4]]
+                    pb = [["Vince", 3], ["Zoe", 2], ["Julien", 6], ["Thomas", 10], ["Mike", 1], ["Matt", 4]]
 
                 ![A bad phone book](https://docs.google.com/drawings/pub?id=1QlxzX6QVWrWcsjvFQzmF5f3kPzs97jWG_xywX3lajNU&amp;w=693&amp;h=101)
                 </section>
@@ -582,7 +582,7 @@ print "Great guess!"
                 A good phone book:
 
                     #This is the syntax for a Python dictionary, made up of 'keys' and corresponding 'values':
-                    pb = {Vince: 3, Zoe: 2, Julien: 6, Thomas: 10, Mike: 1, Matt: 4}
+                    pb = {"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
 
                 ![A good phone book](https://docs.google.com/drawings/pub?id=1y4zAM01OZC76oxt2rf-6Ie-5AY1vLV8Q-mHdOwS920o&amp;w=693&amp;h=101)
                 </section>
@@ -594,7 +594,7 @@ print "Great guess!"
                 ---
 
                     #Creating a dictionary:
-                    my_dictionary={"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
+                    my_dictionary = {"Vince": 3, "Zoe": 2, "Julien": 6, "Thomas": 10, "Mike": 1, "Matt": 4}
                     #Adding 10 to the value associated to the key: "Zoe":
                     my_dictionary["Zoe"] += 10
                     print my_dictionary

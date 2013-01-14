@@ -39,6 +39,7 @@ The repo containsi:
 - Slides for the course viewable [here](http://http://drvinceknight.github.com/Intro_to_Object_Orientated_Programming_With_Python).
 - A Scenario Generator directory that can be used to generate artifical data needed for the challenge.
 - An example exercise: `Exercise.py` and the corresponding solution `Exercise_Solution.py`
+- Two python files with all code from the notes.
 - An Evaluation directory that can be used to evaluate a potential solution to the challenge.
 
 
