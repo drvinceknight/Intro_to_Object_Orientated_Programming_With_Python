@@ -424,19 +424,22 @@
 
                 ---
 
-                    #We set an initial guess:
-                    correct_guess = 9
-                    #We define a variable Guess through input at the prompt:
-                    guess = input('What is my favorite number:')
-                    #We use the while command to repeatedly evaluate whether or not the user guesses correctly.
-                    while guess != correct_guess:
-                        #We embed an if statement within this while loop to help the user guess correctly.
-                        if guess > correct_guess:
-                            guess = input('Your previous guess was too high:')
-                        else:
-                            guess = input('Your previous guess was too low:')
-                    #Note the indentation levels indicating that we are outside of the while loop.
-                    print "Great guess!"
+
+<pre><code contenteditable>#We set an initial guess:
+correct_guess = 9
+#We define a variable guess through input at the prompt:
+guess = input('What is my favorite number:')
+#We use the while command to repeatedly evaluate whether or not the user guesses correctly.
+while guess != correct_guess:
+    #We embed an if statement within this while loop to help the user guess correctly.
+    if guess > correct_guess:
+        guess = input('Your previous guess was too high:')
+    else:
+        guess = input('Your previous guess was too low:')
+#Note the indentation levels indicating that we are outside of the while loop.
+print "Great guess!"
+</code></pre>
+
                 </section>
 
 
@@ -537,13 +540,13 @@
                 <p align="left">A list is a data structure that holds an ordered collection of 'objects'.</p>
 
                     #We define a list using the range command that gives us a collection of integers:
-                    My_list=range(6)
-                    print My_list
+                    my_list = range(6)
+                    print my_list
                     #We can index elements of a list in the same way we indexed strings:
-                    print My_list[0]
+                    print my_list[0]
                     #An important 'method' that can be used on lists is the 'append' method which lets us add an object to a list:
-                    My_list.append(100)
-                    print My_list
+                    my_list.append(100)
+                    print my_list
                 </section>
 
                 <section data-markdown>
@@ -566,7 +569,7 @@
 
                 A bad phone book:
 
-                    PB=[[Vince,3],[Zoe,2],[Julien,6],[Thomas,10],[Mike,1],[Matt,4]]
+                    pb = [[Vince,3],[Zoe,2],[Julien,6],[Thomas,10],[Mike,1],[Matt,4]]
 
                 ![A bad phone book](https://docs.google.com/drawings/pub?id=1QlxzX6QVWrWcsjvFQzmF5f3kPzs97jWG_xywX3lajNU&amp;w=693&amp;h=101)
                 </section>
@@ -579,7 +582,7 @@
                 A good phone book:
 
                     #This is the syntax for a Python dictionary, made up of 'keys' and corresponding 'values':
-                    PB={Vince:3,Zoe:2,Julien:6,Thomas:10,Mike:1,Matt:4]
+                    pb={Vince:3,Zoe:2,Julien:6,Thomas:10,Mike:1,Matt:4]
 
                 ![A good phone book](https://docs.google.com/drawings/pub?id=1y4zAM01OZC76oxt2rf-6Ie-5AY1vLV8Q-mHdOwS920o&amp;w=693&amp;h=101)
                 </section>
@@ -591,10 +594,10 @@
                 ---
 
                     #Creating a dictionary:
-                    My_dictionary={"Vince":3,"Zoe":2,"Julien":6,"Thomas":10,"Mike":1,"Matt":4}
+                    my_dictionary={"Vince":3,"Zoe":2,"Julien":6,"Thomas":10,"Mike":1,"Matt":4}
                     #Adding 10 to the value associated to the key: "Zoe":
-                    My_dictionary["Zoe"]+=10
-                    print My_dictionary
+                    my_dictionary["Zoe"]+=10
+                    print my_dictionary
 
                 </section>
                 <section data-markdown>
@@ -655,10 +658,10 @@
                         pass
 
                     #We create Vince, an instance of Student:
-                    Vince=Student()
+                    vince = Student()
 
                     #We can call Vince to see what "it" is:
-                    print Vince
+                    print vince
 
                 Create another instance and verify that it is different.
                 </section>
@@ -682,7 +685,7 @@
                         age=5
                         sex="Male"
                     #Let us now create Vince again:
-                    Vince=Student()
+                    vince = Student()
                 </section>
 
                 <section data-markdown>
@@ -691,9 +694,9 @@
                 ---
 
                     #We can take a look at the values of each attribute:
-                    print Vince.courses
-                    print Vince.age
-                    print Vince.sex
+                    print vince.courses
+                    print vince.age
+                    print vince.sex
                 </section>
 
                 <section data-markdown>
@@ -702,14 +705,14 @@
                 ---
 
                     #We can add a new course:
-                    Vince.courses.append("French")
-                    print Vince.courses
+                    vince.courses.append("French")
+                    print vince.courses
                     #We can change the value of the age:
-                    Vince.age=28
-                    print Vince.age
+                    vince.age=28
+                    print vince.age
                     #We can change the value of sex:
-                    Vince.sex="M"
-                    print Vince.sex
+                    vince.sex="M"
+                    print vince.sex
                 </section>
 
                 <section data-markdown>
@@ -732,10 +735,10 @@
                         def have_a_birthday(self):
                             self.age+=1
                     #Let us see how this works:
-                    Vince=Student()
-                    print Vince.age
-                    Vince.have_a_birthday()
-                    print Vince.age
+                    vince=Student()
+                    print vince.age
+                    vince.have_a_birthday()
+                    print vince.age
 
                 </section>
 
@@ -754,10 +757,10 @@
                         def have_a_birthday(self):
                             self.age+=1
                     #Let us see how this works:
-                    Vince=Student(["Biology","Math"],28,"Male")
-                    print Vince.courses
-                    print Vince.age
-                    print Vince.sex
+                    vince=Student(["Biology","Math"],28,"Male")
+                    print vince.courses
+                    print vince.age
+                    print vince.sex
 
 
                 </section>
@@ -776,15 +779,15 @@
                     class Math_Student(Student):
                         favorite_class="Mathematics"
                     #Let us create another instance
-                    Becky=Math_Student(["Mathematics","Biology"],29,"Female")
+                    becky=Math_Student(["Mathematics","Biology"],29,"Female")
                     #This class has the attribute of the inherited class:
-                    print Becky.courses
-                    print Becky.age
-                    print Becky.sex
-                    print Becky.favorite_class
+                    print becky.courses
+                    print becky.age
+                    print becky.sex
+                    print becky.favorite_class
                     #This class has the methods of the inherited class:
-                    Becky.have_a_birthday()
-                    print Becky.age
+                    becky.have_a_birthday()
+                    print becky.age
                 </section>
 
                 <section data-markdown>
