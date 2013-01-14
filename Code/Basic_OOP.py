@@ -1,6 +1,4 @@
 #We will define a new class called "Student"
-
-
 class Student():
     pass
 
@@ -69,8 +67,14 @@ print vince.sex
 
 #We can use a class to create new classes:
 class Math_Student(Student):
-    favorite_class = "Mathematics"
-
-vince = Math_Student(["Math, Geography"], 10, "Male")
-print vince.age
-print vince.favorite_class
+        favorite_class = "Mathematics"
+        #Let us create another instance
+becky = Math_Student(["Mathematics", "Biology"], 29, "Female")
+#This class has the attribute of the inherited class:
+print becky.courses
+print becky.age
+print becky.sex
+print becky.favorite_class
+#This class has the methods of the inherited class:
+becky.have_a_birthday()
+print becky.age
