@@ -6,6 +6,8 @@ The course is a one day workshop and is to be thought of in two parts: a teachin
 
 ##Introducing Python and OOP:
 
+Object Orientated Programming (OOP) is a programming paradigm that is increasingly sought after by employers. This one day workshop will introduce students to OOP using Python (an increasingly popular language used by Google, Nasa and others). The format will be to introduce students to Python and OOP in the morning. In the afternoon students will be seperated in to groups to work on a "challenge". It is hoped that most of the actual learning will take place during this "challenge".
+
 - Basic Python:
 
     - Variables
@@ -14,7 +16,7 @@ The course is a one day workshop and is to be thought of in two parts: a teachin
     - Data Structures
     - Functions
 
-- Notions of Object Orientated Programming:
+- Basic Object Orientated Programming:
 
     - Class
     - Attribute
