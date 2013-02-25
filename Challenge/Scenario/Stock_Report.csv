@@ -1,0 +1,40 @@
+Department,Product,Price,Loyalty_Points
+Home and Entertainments,Christmas Cards,4,52
+Home and Entertainments,Blu Ray,15,300
+Home and Entertainments,TV,312,7000
+Home and Entertainments,Computer,600,12000
+Home and Entertainments,Utensils,8,89
+Home and Entertainments,Glasses,3,53
+Bakery,Bagel,1,10
+Bakery,Pitta,1,20
+Bakery,Naan,1,10
+Bakery,Croissant,1.5,15
+Bakery,Crumpet,1.5,20
+Bakery,Sweet Treats,3,30
+Bakery,Cake,4,40
+Fresh Food,Bananas,1.5,20
+Fresh Food,Fresh Milk,2,10
+Fresh Food,Eggs,1,10
+Fresh Food,Fresh Beef,3,45
+Fresh Food,Fresh Fish,3,30
+Fresh Food,Fresh Pasta,1,10
+Fresh Food,Fresh Pizza,1.5,25
+Fresh Food,Fresh Flowers,4,20
+Food Cupboard,Dried Fruit and Nuts,0.5,7
+Food Cupboard,Soup,0.5,8
+Food Cupboard,Tinned Fruit,1,12
+Food Cupboard,Gravy,2,22
+Food Cupboard,Oil,0.5,7
+Food Cupboard,Cous cous,1,14
+Food Cupboard,Vinegar,0.5,56
+Food Cupboard,Olives,1.5,17
+Food Cupboard,Pickles,1,13
+Food Cupboard,Flour,0.5,56
+Food Cupboard,Icing Sugar,2,21
+Food Cupboard,Jam,2,21
+Drinks,Lemonade,1.5,19
+Drinks,Sports and Energy,2.5,27
+Drinks,Still Water,1,12
+Drinks,Fresh Fruit Juice,2,24
+Drinks,Tea,3,33
+Drinks,Coffee,2.5,26
