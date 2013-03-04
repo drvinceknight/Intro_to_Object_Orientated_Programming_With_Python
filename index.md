@@ -34,3 +34,9 @@ Here are two python files that show a different challenge and it's solution:
 
 - [Exercise.py](Code/Exercise.py)
 - [Exercise_Solution.py](Code/Exercise_Solution.py)
+
+## Handling CSV files
+
+This [blog post](http://drvinceknight.blogspot.co.uk/2012/11/importing-and-exporting-data-from-and.html) and [video](http://www.youtube.com/watch?feature=player_embedded&v=jQ9aDyBWCXI) could be helpful for the challenge.
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/jQ9aDyBWCXI" frameborder="0" allowfullscreen></iframe>
