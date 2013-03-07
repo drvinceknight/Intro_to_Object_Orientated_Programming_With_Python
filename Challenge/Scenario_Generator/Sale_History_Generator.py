@@ -143,5 +143,5 @@ else:
     stock_report = sys.argv[1]
 
 products = import_file(stock_report)
-a = Sale_History(products, 1000, 30)
+a = Sale_History(products, 10, 5)
 a.create_file()
