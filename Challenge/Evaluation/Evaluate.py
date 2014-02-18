@@ -54,6 +54,8 @@ if len(argv) == 1:
 
     ./Evaluate [solution_script = "Solution_Script.py"] [number_of_runs = 10]
           """
+    exit()
+
 if len(argv) > 1:
     """
     Read in all input parameters
