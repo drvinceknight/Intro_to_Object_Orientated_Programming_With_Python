@@ -23,7 +23,7 @@ Object Orientated Programming (OOP) is a programming paradigm that is increasing
     - Methods
     - Inheritance
 
-Slides are very much a work in progress but can be viewed [here](http://drvinceknight.github.com/Intro_to_Object_Orientated_Programming_With_Python/) - they're made using the awesome [reveal.js](https://github.com/hakimel/reveal.js).
+The course site can be found [here](http://www.vincent-knight.com/teaching/introtooop/).
 
 ---
 
